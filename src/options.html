@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Test Extension Options</title>
+  <style>
+    body{ padding: 5px; }
+    div{ color: red; }
+  </style>
+</head>
+
+<body>
+  通知対象の未読チャット：<br/>
+  <input type="radio" name="target" value="0" id="target0" checked="checked"><label for="target0">すべて</label>
+  <input type="radio" name="target" value="1" id="target1"><label for="target1">あなた宛てのTOのみ</label>
+  <hr/>
+  通知クローズ時の再表示間隔：<br/>
+  <input id="displayIntarval" value="10"/> 秒<br/>
+  ※未読を常に通知したい場合は1を設定してください。
+  <div class="status" id="status1"></div>
+  <hr/>
+  <br/>
+  <button id="save">保存する</button>
+  <div class="status" id="status2"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
